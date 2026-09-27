@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+.box,
+.box2,
+.box3 {
+    border: 2px solid darkgrey
+}
