@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -7,34 +8,69 @@ header {
 }
 
 main {
-    padding: 20px;
+    min-height: calc (100vh - 100px);
+    /* Riempie l'altezza della pagina */
+    margin: 10%;
+    padding: 0 20 px;
     display: flex;
-}
-
-.box,
-.box2,
-.box3 {
-    border: 2px solid darkgrey;
-    border-radius: 10px;
-    max-width: 800px;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: space-around;
+    align-items: stretch;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: calc((100-20px) /3)
+    gap: 20px;
+    text-align: center;
+
+
 }
 
-.box2 {
+p {
+    font-size: 30px;
+}
+
+strong {
+    font-size: 50px;
+}
+
+.box {
+    flex: 1;
+    align-self: stretch;
+    border: 2px solid darkgrey;
+    border-radius: 40px;
+    padding: 10px;
+
+
+
+}
+
+.box-centrale {
     background-color: blueviolet;
     color: white;
 }
 
-h2 {
-    text-align: center;
+
+
+.bottone-viola {
+    background-color: blueviolet;
+    color: white;
+}
+
+.bottone-bianco {
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+ul li {
+    padding: 10px 0;
 }
 
 .bottoni {
-    border-radius: 10px;
+    border-radius: 40px;
     text-align: center;
-    width: 40%;
+    width: 80%;
+    padding: 8px 12px;
 }
