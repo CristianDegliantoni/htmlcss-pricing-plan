@@ -1,12 +1,17 @@
+/* ===================================================
+   1. RESET & IMPOSTAZIONI GLOBALI
+   =================================================== */
 * {
-    font-family: sans-serif;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+/* ===================================================
+   2. HEADER
+   =================================================== */
 header {
     text-align: left;
     margin: 20px;
-
 }
 
 h1 {
@@ -17,14 +22,34 @@ h1 {
     font-size: 14px;
 }
 
+/* ===================================================
+   3. LAYOUT PRINCIPALE (MAIN)
+   =================================================== */
 main {
     display: flex;
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin: 40px;
     text-align: center;
-    margin: 40px
+}
+
+/* ===================================================
+   4. CARD PREZZI (BOX)
+   =================================================== */
+.box {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid darkgrey;
+    border-radius: 40px;
+}
+
+/* Variante per il box centrale in evidenza */
+.box-centrale {
+    background-color: blueviolet;
+    color: white;
 }
 
 h2 {
@@ -36,6 +61,9 @@ small {
     color: darkgray;
 }
 
+/* ===================================================
+   5. PREZZI & SCONTI
+   =================================================== */
 .prezzo-abbonamento {
     font-size: 30px;
 }
@@ -44,30 +72,12 @@ strong {
     font-size: 50px;
 }
 
-.box {
-    flex: 1;
-    align-self: stretch;
-    border: 2px solid darkgrey;
-    border-radius: 40px;
-    padding: 10px;
-    max-width: 300px;
-
-
-
-}
-
-.box-centrale {
-    background-color: blueviolet;
-    color: white;
+.sconto-annuale {
+    margin: 10px;
 }
 
 h3 {
     display: inline;
-
-}
-
-.sconto-annuale {
-    margin: 10px;
 }
 
 .percentuale-sconto {
@@ -75,7 +85,16 @@ h3 {
     border: 2px solid lightgrey;
     background-color: lightgray;
     border-radius: 40px;
+}
 
+/* ===================================================
+   6. BOTTONI
+   =================================================== */
+.bottoni {
+    width: 80%;
+    padding: 8px 12px;
+    border-radius: 40px;
+    text-align: center;
 }
 
 .bottone-viola {
@@ -90,10 +109,13 @@ h3 {
     margin-top: 10px;
 }
 
+/* ===================================================
+   7. LISTA CARATTERISTICHE (UL / LI)
+   =================================================== */
 ul {
     list-style: none;
-    padding: 0;
     margin: 10px;
+    padding: 0;
     padding-left: 20px;
     font-size: 20px;
 }
@@ -101,11 +123,4 @@ ul {
 ul li {
     padding: 10px 0;
     text-align: left;
-}
-
-.bottoni {
-    border-radius: 40px;
-    text-align: center;
-    width: 80%;
-    padding: 8px 12px;
 }
