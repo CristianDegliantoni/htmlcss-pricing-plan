@@ -20,6 +20,7 @@ h1 {
 
 .sottotitolo-header {
     font-size: 14px;
+    margin-top: 0;
 }
 
 /* ===================================================
@@ -41,7 +42,7 @@ main {
 .box {
     flex: 1;
     max-width: 300px;
-    padding: 10px;
+    padding: 15px;
     border: 2px solid darkgrey;
     border-radius: 40px;
 }
@@ -52,13 +53,19 @@ main {
     color: white;
 }
 
-h2 {
+.box h2 {
     font-size: 30px;
     margin-bottom: 5px;
 }
 
-small {
+.tag-piano {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: darkgray;
+}
+
+.box-centrale .tag-piano {
+    color: #e0d0f5;
 }
 
 /* ===================================================
@@ -66,25 +73,30 @@ small {
    =================================================== */
 .prezzo-abbonamento {
     font-size: 30px;
+    margin: 15px 0;
 }
 
-strong {
+.prezzo-abbonamento strong {
     font-size: 50px;
 }
 
 .sconto-annuale {
-    margin: 10px;
-}
-
-h3 {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .percentuale-sconto {
-    display: inline;
-    border: 2px solid lightgrey;
+    padding: 2px 8px;
     background-color: lightgray;
+    border: 2px solid lightgrey;
     border-radius: 40px;
+    font-size: 14px;
+    color: black;
 }
 
 /* ===================================================
@@ -92,21 +104,23 @@ h3 {
    =================================================== */
 .bottoni {
     width: 80%;
-    padding: 8px 12px;
+    padding: 10px 16px;
     border-radius: 40px;
-    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .bottone-viola {
     background-color: blueviolet;
     color: white;
-    margin-top: 10px;
 }
 
 .bottone-bianco {
     background-color: white;
-    color: black;
-    margin-top: 10px;
+    color: blueviolet;
 }
 
 /* ===================================================
@@ -114,13 +128,12 @@ h3 {
    =================================================== */
 ul {
     list-style: none;
-    margin: 10px;
-    padding: 0;
-    padding-left: 20px;
-    font-size: 20px;
+    margin: 15px 0 0 0;
+    padding: 0 10px;
+    font-size: 16px;
 }
 
 ul li {
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: left;
 }
