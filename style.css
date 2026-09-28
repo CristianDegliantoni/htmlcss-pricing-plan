@@ -4,25 +4,39 @@
 }
 
 header {
-    text-align: center;
+    text-align: left;
+    margin: 20px;
+
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.sottotitolo-header {
+    font-size: 14px;
 }
 
 main {
-    min-height: calc (100vh - 100px);
-    /* Riempie l'altezza della pagina */
-    margin: 10%;
-    padding: 0 20 px;
     display: flex;
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     text-align: center;
-
-
+    margin: 40px
 }
 
-p {
+h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+small {
+    color: darkgray;
+}
+
+.prezzo-abbonamento {
     font-size: 30px;
 }
 
@@ -36,6 +50,7 @@ strong {
     border: 2px solid darkgrey;
     border-radius: 40px;
     padding: 10px;
+    max-width: 300px;
 
 
 
@@ -46,26 +61,46 @@ strong {
     color: white;
 }
 
+h3 {
+    display: inline;
 
+}
+
+.sconto-annuale {
+    margin: 10px;
+}
+
+.percentuale-sconto {
+    display: inline;
+    border: 2px solid lightgrey;
+    background-color: lightgray;
+    border-radius: 40px;
+
+}
 
 .bottone-viola {
     background-color: blueviolet;
     color: white;
+    margin-top: 10px;
 }
 
 .bottone-bianco {
     background-color: white;
     color: black;
+    margin-top: 10px;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 10px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 ul li {
     padding: 10px 0;
+    text-align: left;
 }
 
 .bottoni {
